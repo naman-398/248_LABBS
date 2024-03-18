@@ -25,7 +25,7 @@ const Footersection = () => {
 </div>
         </Container>
         <hr className=' footerline mb-0 mt-5' />
-        <p className=' fw-normal fs-sm lh19 text-white opacity-60 mb-0 py-4 text-center'>© 2023 248 Labs. All rights reserved</p>
+        <p className=' fw-normal fs-sm lh19 text-white opacity-60 mb-0 py-4 text-center'>© 2024 248 Labs. All rights reserved</p>
     </div>
   )
 }
