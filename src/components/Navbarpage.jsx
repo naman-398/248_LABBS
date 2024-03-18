@@ -18,7 +18,7 @@ const Navbarpage = () => {
     <div>
         <Container className=' py-4  '>
             <div className=' d-flex  align-items-center  justify-content-between '>
-<img src={pagelogo} alt="" className=' navimg' />
+<img src={pagelogo} alt="" className=' navimg cursor-pointer' />
 <ul className={`${first ? "nav-true" : "nav-false"} d-flex  align-items-center  mb-0  ps-0 gap-4  mobile-view `}>
     <li><a href="#aboutus" onClick={show} className=' opacity-70 fs-1sm fw-normal  lh24 text-white  mb-0  text-decoration-none pagelinks position-relative '>About Us</a></li>
     <li><a href="#team" onClick={show} className=' opacity-70 fs-1sm fw-normal  lh24 text-white  mb-0  text-decoration-none pagelinks position-relative  '>Our Team</a></li>

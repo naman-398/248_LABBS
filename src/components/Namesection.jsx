@@ -19,12 +19,12 @@ const Namesection = () => {
                             Make Your Move
                         </button></div>
                     </Col>
-                    <Col lg={8} className=' col-12 mt-4 mt-lg-0'>
-                        <p className=' fw-normal  lh24 fs-1sm opacity-70 text-white mb-0 text-center text-lg-start' data-aos="fade-left">Unveiled is a unique <span className=' opacity-100 fw-semibold'> collectible card game </span> in which you gain fervour for your ventures, spending it on mercenaries, spies, automata, and influence.
+                    <Col lg={8} className=' col-12 mt-4 mt-lg-0' data-aos="fade-left">
+                        <p className=' fw-normal  lh24 fs-1sm namepara mb-0 text-center text-lg-start' >Unveiled is a unique <span className=' text-white fw-semibold'> collectible card game </span> in which you gain fervour for your ventures, spending it on mercenaries, spies, automata, and influence.
                             <span className=' d-block mt-sm-3 mt-1'>
-                            You play a rogue merchant trader allied to a noble house, alongside your <span className=' opacity-100 fw-semibold'> cryptid-humanoid companions </span> in a game of ambition and alliance, deception and miracles, manipulation and annihilation. Bells chime in the harbour, and markets are opening. Guards have swept the streets of the more obvious dangers.
+                            You play a rogue merchant trader allied to a noble house, alongside your <span className=' text-white fw-semibold'> cryptid-humanoid companions </span> in a game of ambition and alliance, deception and miracles, manipulation and annihilation. Bells chime in the harbour, and markets are opening. Guards have swept the streets of the more obvious dangers.
                             </span>
-                           <span className=' mt-1 mt-sm-3 d-block opacity-100 fw-semibold'> What’s your next move? </span></p>
+                           <span className=' mt-1 mt-sm-3 d-block text-white fw-semibold'> What’s your next move? </span></p>
                     </Col>
                 </Row>
             </Container>

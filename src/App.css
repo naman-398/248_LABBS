@@ -89,10 +89,13 @@
 /* /////////////////////////////////////////.  OPACITY .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .opacity-70 {
-  opacity: 70%;
+  opacity: 70% ;
 }
 .opacity-6 {
   opacity: 6%;
+}
+.opacity-100{
+  opacity: 1 !important;
 }
 .opacity-60 {
   opacity: 60%;
@@ -574,7 +577,9 @@ animation: loader 2s alternate linear infinite;
 .namesection-bigimg-card:hover .namesection-bigimg {
   transform: scale(1.05);
 }
-
+.namepara{
+  color: #B2B2B2;
+}
 /* /////////////////////////////////////////.  ARICH SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rich-img-card {
   border-radius: 30px;
