@@ -515,7 +515,7 @@ animation: loader 2s alternate linear infinite;
 }
 .Our_name {
   left: -7.5%;
-  top: -4%;
+  top: -3%;
   animation: bigname2 4s linear alternate infinite;
 }
 /* /////////////////////////////////////////.  LEVELUP SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -722,7 +722,23 @@ input[type="checkbox" i] {
   padding: 16px 32px !important;
   border: unset;
 }
-
+.submitbox{
+  border-radius: 30px;
+  padding: 20px;
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  max-width: 330px;
+  max-height: 240px;
+}
+.z-11{
+  z-index: 11;
+}
+.modal_box{
+  backdrop-filter: blur(30px);
+}
+.modalsvg{
+  right: 20px;
+  top: 20px;
+}
 /* /////////////////////////////////////////.  FOOTER SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .footerline {
@@ -944,6 +960,10 @@ input[type="checkbox" i] {
     --fs-1lg: 40px;
     --fs-2lg: 64px;
     --fs-3lg: 107px;
+  }
+  .submitbox{
+    max-width: 400px;
+    max-height: 350px;
   }
   .lh86 {
     line-height: 68.4px;

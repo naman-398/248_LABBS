@@ -15,7 +15,7 @@ const Foamsection = () => {
     number: "",
     email: "",
   });
-  const [Pop, setPop] = useState(false);
+  const [modal, setmodal] = useState(false);
   const submission = (e) => {
     const { name, value } = e.target;
     setFromdata({ ...Fromdata, [name]: value });
@@ -46,9 +46,29 @@ const Foamsection = () => {
     }
     setErrordata(error);
     if (Object.keys(error).length === 0) {
-      setPop(true);
+      setmodal(true);
+      setErrordata({
+        name: "",
+        lastname: "",
+        number: "",
+        email: "",
+      })
+      setFromdata({
+        name: "",
+        lastname: "",
+        number: "",
+        email: "",
+      })
+      console.log(Fromdata)
+
     }
   };
+  if (modal ) {
+    document.body.classList.add('overflow-hidden')
+  }
+  else  {
+    document.body.classList.remove('overflow-hidden')
+  }
   return (
     <div className=' s10bgimg' id="aboutus">
       <Container>
@@ -160,16 +180,24 @@ const Foamsection = () => {
               </form>
             </div>
           </Col>
-          <Col  lg={4} className=' col-12 mt-4 mt-lg-0'>
+          <Col lg={4} className=' col-12 mt-4 mt-lg-0'>
             <div className=' max-w-374 mx-auto'>
-            <p className=' fw-normal fs-md lh28 text-white mb-0 text-center text-lg-start' data-aos="zoom-in">Stay updated</p>
-            <p className=' fw-normal fs-1sm lh24 text-white mt-12 mb-4 opacity-70 text-center text-lg-start' data-aos="zoom-in">At 248 Labs, our constant pursuit is to build engaging games that spared joy. Don’t hesitate to reach out to us with your thoughts and messages - we are all ears!</p>
-            <p className=' fw-normal fs-md lh28 text-white mt-12  mb-0 text-center text-lg-start' data-aos="zoom-in">Address</p>
-            <p className=' fw-normal fs-1sm lh24 text-white mt-12  mb-0 opacity-70 text-center text-lg-start' data-aos="zoom-in">390 Orchard Road, 03-07, Palais Renaissance.</p>
+              <p className=' fw-normal fs-md lh28 text-white mb-0 text-center text-lg-start' data-aos="zoom-in">Stay updated</p>
+              <p className=' fw-normal fs-1sm lh24 text-white mt-12 mb-4 opacity-70 text-center text-lg-start' data-aos="zoom-in">At 248 Labs, our constant pursuit is to build engaging games that spared joy. Don’t hesitate to reach out to us with your thoughts and messages - we are all ears!</p>
+              <p className=' fw-normal fs-md lh28 text-white mt-12  mb-0 text-center text-lg-start' data-aos="zoom-in">Address</p>
+              <p className=' fw-normal fs-1sm lh24 text-white mt-12  mb-0 opacity-70 text-center text-lg-start' data-aos="zoom-in">390 Orchard Road, 03-07, Palais Renaissance.</p>
             </div>
           </Col>
         </Row>
       </Container>
+      {modal && <div className=' h-100 w-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center z-11 modal_box p-4' onClick={()=> setmodal(false) }>
+      <div className=' submitbox w-100 h-100 d-flex justify-content-center align-items-center position-relative' >
+        <span className=' position-absolute modalsvg ' onClick={()=> setmodal(false) }><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="#FFFFFF" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></span>
+        <p className=' text-white fs-md text-center ' >THANKS FOR SUBSCRIBE !! 👍🏻</p>
+        </div>
+        </div>}
     </div>
   )
 }
