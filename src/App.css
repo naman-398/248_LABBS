@@ -605,6 +605,9 @@ animation: loader 2s alternate linear infinite;
   transform: translate(-0%, 0%);
 }
 /* /////////////////////////////////////////.  OUR TEAM SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+button{
+  cursor: pointer;
+}
 
 .s7-card {
   border-radius: 30px;
