@@ -609,9 +609,8 @@ animation: loader 2s alternate linear infinite;
 .s7-card {
   border-radius: 30px;
   background: #1e1e1e73;
-  max-width: 558px;
   padding: 13px 13px 14px 13px;
-  min-height: 358px;
+height: 100%;
   overflow: hidden;
 }
 .s7-card-imgcard {

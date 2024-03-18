@@ -85,7 +85,7 @@ const Ourteamsection = () => {
             <div className=' s7-card-imgcard w-100 h-100 '>
                 <img src={mycard2.img} alt="s7img1" className=' w-100 h-100 object-fit-cover s7-card-img' />
             </div>
-            <div className=' max-w-283'>
+            <div className=''>
                 <p className=' fw-semibold fs-3sm lh24 text-white mb-0'> {mycard2.name} <span className=' fw-normal fs-1sm lh19 color-gradient-s7-card'>{mycard2.profession}</span></p>
                 <p className='  fw-normal fs-1sm lh24 opacity-70 text-white mb-0 mt-12' >{mycard2.para1}</p>
             </div>
