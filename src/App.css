@@ -1172,7 +1172,7 @@ input[type="checkbox" i] {
   }
 }
 
-@media (max-width: 767.9px) {
+@media (max-width: 991.9px) {
   .mobile-view {
     display: flex;
     flex-direction: column;
