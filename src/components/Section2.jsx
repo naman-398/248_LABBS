@@ -11,11 +11,12 @@ import "slick-carousel/slick/slick-theme.css";
 import s2elipse from "../Assets/Images/s2elipse.webp";
 const Section2 = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 3000,
+        speed: 4500,
         slidesToShow: 5,
         slidesToScroll: 1,
+        cssEase: 'linear',
         arrow: false,
         autoplay: true,
         pauseOnHover: true,
