@@ -94,7 +94,7 @@
 .opacity-6 {
   opacity: 6%;
 }
-.opacity-100{
+.opacity-100 {
   opacity: 1 !important;
 }
 .opacity-60 {
@@ -161,55 +161,55 @@
   cursor: pointer;
 }
 
-.backtotop{
+.backtotop {
   width: 45px;
   height: 45px;
   border: unset;
   border-radius: 50%;
   background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
 }
-.z-9{
+.z-9 {
   z-index: 9;
 }
-.backtotop:hover{
-  animation: backtotop .5s linear alternate infinite;
+.backtotop:hover {
+  animation: backtotop 0.5s linear alternate infinite;
 }
 @keyframes backtotop {
-  0%{
+  0% {
     transform: translatey(-10px);
   }
-  100%{
+  100% {
     transform: translatey(0px);
   }
 }
-.backtotop-position{
+.backtotop-position {
   bottom: 20px;
   right: 10px;
   border: unset;
-background-color: transparent;
+  background-color: transparent;
 }
-.Loader_text-linear-gradient{
+.Loader_text-linear-gradient {
   background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-animation: loader 2s alternate linear infinite;
+  animation: loader 2s alternate linear infinite;
 }
 @keyframes loader {
-  0%{
-    transform: translateY( -40px) ;
-    opacity: .5;
+  0% {
+    transform: translateY(-40px);
+    opacity: 0.5;
   }
-  50%{
-    transform: translateY( 0px) ;
+  50% {
+    transform: translateY(0px);
     opacity: 1;
   }
-  100%{
-    transform: translateY( -40px) ;
-    opacity: .5;
+  100% {
+    transform: translateY(-40px);
+    opacity: 0.5;
   }
 }
-.top_-50{
+.top_-50 {
   top: -10%;
   max-width: 300px;
 }
@@ -247,9 +247,10 @@ animation: loader 2s alternate linear infinite;
   );
   z-index: -1;
   transition: all 300ms linear;
+  opacity: 1;
 }
 .commonbtn2:hover::after {
-  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+opacity: 0;
 }
 .commonbtn2::before {
   transition: all 0.3s linear;
@@ -281,20 +282,32 @@ animation: loader 2s alternate linear infinite;
   transition: all 300ms linear;
   position: relative;
   overflow: hidden;
+  background: transparent;
   z-index: 0;
   transition: all 300ms linear;
+}
+.commonbtn1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  z-index: -2;
+  opacity: 1;
+  transition: all 300ms linear;
+}
+.commonbtn1:hover::after {
+opacity: 0;
 }
 
 .commonbtn1::before {
   transition: all 300ms linear;
   position: absolute;
 }
-.commonbtn1:hover {
-  background: transparent;
-}
+
 .commonbtn1:hover:before {
-  transition: all 0.3s linear;
   content: "";
   position: absolute;
   z-index: -1;
@@ -333,11 +346,14 @@ animation: loader 2s alternate linear infinite;
   height: 100%;
   left: 0;
   top: 0;
-  background: transparent;
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
   transition: all 300ms linear;
-  z-index: -1;
+opacity: 0;
+z-index: -2;
 }
 .s5-btn1:hover::after {
+  transition: all 300ms linear;
+  opacity: 1;
   background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
 }
 .s5-btn1::before {
@@ -577,8 +593,8 @@ animation: loader 2s alternate linear infinite;
 .namesection-bigimg-card:hover .namesection-bigimg {
   transform: scale(1.05);
 }
-.namepara{
-  color: #B2B2B2;
+.namepara {
+  color: #b2b2b2;
 }
 /* /////////////////////////////////////////.  ARICH SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rich-img-card {
@@ -605,7 +621,7 @@ animation: loader 2s alternate linear infinite;
   transform: translate(-0%, 0%);
 }
 /* /////////////////////////////////////////.  OUR TEAM SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-button{
+button {
   cursor: pointer;
 }
 
@@ -613,7 +629,7 @@ button{
   border-radius: 30px;
   background: #1e1e1e73;
   padding: 13px 13px 14px 13px;
-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .s7-card-imgcard {
@@ -693,7 +709,12 @@ height: 100%;
   opacity: 1;
 }
 .gradient-border-FOCUS:focus {
-background: linear-gradient(#292b27 , #292b27) , linear-gradient(151.6deg, rgba(212, 20, 90, 0.4) 1.85%, rgba(251, 176, 59, 0.4) 98.12%);
+  background: linear-gradient(#292b27, #292b27),
+    linear-gradient(
+      151.6deg,
+      rgba(212, 20, 90, 0.4) 1.85%,
+      rgba(251, 176, 59, 0.4) 98.12%
+    );
   outline: none;
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -722,20 +743,20 @@ input[type="checkbox" i] {
   padding: 16px 32px !important;
   border: unset;
 }
-.submitbox{
+.submitbox {
   border-radius: 30px;
   padding: 20px;
   background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
   max-width: 330px;
   max-height: 240px;
 }
-.z-11{
+.z-11 {
   z-index: 11;
 }
-.modal_box{
+.modal_box {
   backdrop-filter: blur(30px);
 }
-.modalsvg{
+.modalsvg {
   right: 20px;
   top: 20px;
 }
@@ -747,12 +768,12 @@ input[type="checkbox" i] {
   opacity: 50% !important;
   width: 100%;
 }
-.footericon{
+.footericon {
   transition: all 300ms linear;
   cursor: pointer;
 }
-.footericon:hover{
-  transform: scale(.95);
+.footericon:hover {
+  transform: scale(0.95);
 }
 
 /* /////////////////////////////////////////.  RoADMAP SECTION .\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -762,7 +783,7 @@ input[type="checkbox" i] {
   margin: 0 auto;
   margin-top: 70px;
 }
-.rmbg{
+.rmbg {
   background-image: url(./Assets/Images/rmbg.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -907,31 +928,31 @@ input[type="checkbox" i] {
   top: 30%;
   max-width: 300px;
 }
-.nameelipse{
+.nameelipse {
   top: -5%;
   left: 0%;
   z-index: 0;
   max-width: 385px;
   max-height: 375px;
 }
-.arichelipse{
+.arichelipse {
   width: 200px;
   height: 200px;
-  background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
   right: 7%;
   top: 17%;
   filter: blur(106px);
   z-index: 0;
 }
-.ourteamel1{
+.ourteamel1 {
   top: 10%;
   z-index: 0;
 }
-.ourteamel2{
+.ourteamel2 {
   top: 35%;
   z-index: 0;
 }
-.rmelipse{
+.rmelipse {
   top: 0%;
   max-width: 358px;
 }
@@ -966,7 +987,7 @@ input[type="checkbox" i] {
     --fs-2lg: 64px;
     --fs-3lg: 107px;
   }
-  .submitbox{
+  .submitbox {
     max-width: 400px;
     max-height: 350px;
   }
@@ -996,7 +1017,7 @@ input[type="checkbox" i] {
   .section2-padding {
     padding: 87px 0 142px 0;
   }
-  .rmelipse{
+  .rmelipse {
     top: -10%;
     max-width: unset;
   }
@@ -1090,7 +1111,7 @@ input[type="checkbox" i] {
     left: 48%;
     top: 40%;
   }
-  .arichelipse{
+  .arichelipse {
     width: 362px;
     height: 366px;
     filter: blur(106px);

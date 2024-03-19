@@ -8,7 +8,7 @@ const Loadersection = () => {
         const delay = setTimeout(() => {
             setIsLoaded(true); 
             document.body.style.overflow = ''; 
-        }, 4500); 
+        }, 0); 
 
         return () => clearTimeout(delay);
     }, []);
