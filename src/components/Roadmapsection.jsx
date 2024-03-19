@@ -8,7 +8,7 @@ import { Container } from 'react-bootstrap';
 import rmelipse1 from "../Assets/Images/rmelipse1.webp";
 const Roadmapsection = () => {
   return (
-    <div className=' position-relative'>
+    <div className=' position-relative rmbg'>
 <img src={rmelipse1} alt="rmelipse1" className=' position-absolute start-0 rmelipse' />
         <Container className=' rm-section-pt position-relative' id="rm">
         <p className=' position-absolute opacity-6 fw-bold fs-3lg lh224 text-white Rm_name mb-0'>Roadmap</p>

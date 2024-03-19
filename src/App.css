@@ -762,7 +762,12 @@ input[type="checkbox" i] {
   margin: 0 auto;
   margin-top: 70px;
 }
-
+.rmbg{
+  background-image: url(./Assets/Images/rmbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .timeline::after {
   content: "";
   position: absolute;
