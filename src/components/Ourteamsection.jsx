@@ -39,7 +39,7 @@ const mycard2info = [
     {
         aos: "fade-left",
         img: s7img4,
-        name: 'James Vuong',
+        name: 'Ryan Ang',
         profession: '(Lorem Ipsum)',
         para1: 'Experienced in investing in traditional equity markets and blockchain companies. Early adopter of digital assets and co-founded a decentralised finance application that provides walletservices, swaps and DeFi ',
         para2: "products. Previously in the private equity arm of one of Singapore’s leading asset management funds, Dymon Asia Capital. Previously the fund manager at Blockchain Ventures."
