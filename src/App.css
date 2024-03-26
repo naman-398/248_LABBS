@@ -708,6 +708,13 @@ button {
   mask-composite: exclude;
   opacity: 1;
 }
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
 .gradient-border-FOCUS:focus {
   background: linear-gradient(#292b27, #292b27),
     linear-gradient(
